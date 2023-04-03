@@ -1,3 +1,5 @@
+#programa para saber as raízes de uma função quadrada
+
 import math
 
 a =  int(input("Informe o valor de a:"))
