@@ -2,18 +2,19 @@
 #exemplo: 12345567 
 
 x = int(input())
-y = 0
-aux = 1
+aux = x % 10
+x //= 10
 tem_adjacente = False
-
+cont = 0
 
 while x != 0:
     y = x % 10
-    x //= 10
-    
     if (y == aux):
         tem_adjacente = True
+    else:
+        cont += 1
     aux = y
+    x //= 10
     
 if tem_adjacente:
     print("Esse número contém números adjacentes!")
