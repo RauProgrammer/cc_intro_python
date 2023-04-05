@@ -1,35 +1,20 @@
-def resp_final(resp_n, resp_k, resp_nk):
-    resp_final = (resp_n)//(resp_k * resp_nk)
+def fatorial(x):
+    count = 1
+    fat_x = 1
     
-    print(resp_final)
-
-def fatorial(n, k):
-    count1 = 1
-    count2 = 1
-    count3 = 1
-    
-    fat_n = 1
-    fat_k = 1
-    fat_nk = 1
-    
-    nk = n - k
-
-    while count1 <= n:
-        fat_n *= count1
-        count1 += 1
-    
-    while count2 <= k:
-        fat_k *= count2
-        count2 +=1
-    
-    while count3 <= nk:
-        fat_nk *= count3
-        count3 +=1
-    
-    resp_final(fat_n, fat_k, fat_nk)
+    if (x >= 0):
+        while (count <= x):
+            fat_x *= count
+            count +=1
+        
+        return fat_x
+    else:
+        print("Não existe fatorial de número negativo!")
 
 def coeficiente_binomial(n, k):
-    fatorial(n, k)  
+    binomial = fatorial(n)//(fatorial(k) * fatorial(n-k)) 
+    
+    print(binomial) 
     
 coeficiente_binomial(10,6)  
 
