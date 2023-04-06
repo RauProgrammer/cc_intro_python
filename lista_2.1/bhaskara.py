@@ -1,11 +1,13 @@
 import math
 
-def delta(a, b, c):
+def calc_delta(a, b, c):
     delta = ((b ** 2) - (4 * a * c))
     
     return delta
 
-def raizes(delta, a, b):
+def bhaskara(a, b, c):
+    delta = calc_delta(a, b, c)
+    
     if (delta >= 0):
         x = (-b + math.sqrt(delta))//(2*a)
         y = (-b - math.sqrt(delta))//(2*a)
@@ -20,9 +22,13 @@ def raizes(delta, a, b):
     else:
         print("esta equação não possui raízes reais")
 
-a =  float(input("Informe o valor de a:"))
-b =  float(input("Informe o valor de b:"))
-c =  float(input("Informe o valor de c:"))
+def main():
+    a =  float(input("Informe o valor de a:"))
+    b =  float(input("Informe o valor de b:"))
+    c =  float(input("Informe o valor de c:"))
+    
+    bhaskara(a, b, c)
 
-raizes(delta(a, b, c), a, b)
+main()
+
 
