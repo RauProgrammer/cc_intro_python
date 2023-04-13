@@ -81,6 +81,25 @@ def avalia_textos(textos, ass_cp):
     '''IMPLEMENTAR. Essa funcao recebe uma lista de textos e uma assinatura ass_cp e deve devolver o numero (1 a n) do texto com maior probabilidade de ter sido infectado por COH-PIAH.'''
     pass
 
+#Calculo do tamanho médio de palavras
+def tamanho_medio_palavras(palavras):
+    pass
+
+#Calculo Relação Type-Token
+def type_token(palavras):
+    pass
+
+#Calculo Razão Hapax Legomana
+def razao_hapax_legomana(palavras):
+    pass
+
+#Calculo complexidade de sentença
+def tamanho_medio_sentença(phrases_list, sentences): 
+    pass
+
+#Calculo tamanho médio de frase
+def tamanho_medio_de_frase(phrases_list):
+    pass
 
 def main():
     main_signature = le_assinatura()
